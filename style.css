@@ -1,0 +1,68 @@
+/* Apply styles for the split-screen layout with transparent number input fields. */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.split {
+    display: flex;
+    height: 100vh;
+}
+
+.Fahrenheit {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #86A8E7;
+    color: #333;
+}
+
+.Celsius {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #5FFBF1;
+    color: #333;
+}
+
+.Kelvin {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #D16BA5;
+    color: #333;
+}
+
+h1 {
+    font-size: 35px;
+    margin: 100px;
+}
+
+input {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 200px;
+    border: none;
+    border-bottom: #333 solid 3px;
+    outline: none;
+    background: transparent;
+
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
